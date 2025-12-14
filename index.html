@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System, IP & Location Dashboard</title>
+    <link rel="stylesheet" href="apiip.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg">
+        <span></span><span></span><span></span>
+    </div>
+
+    <header>
+        <h1>System, IP & Location Information</h1>
+        <p class="subtitle">
+            View your network, browser, device and location details in real time.
+            <br>
+            <strong>Note:</strong> All values shown are <em>approximate</em> and browser-restricted.
+        </p>
+        <button id="info">Show My Information</button>
+    </header>
+
+    <div class="container">
+
+        <!-- LOCATION & WEATHER -->
+        <table>
+            <caption>Location & Weather Information</caption>
+            <tr>
+  <td>Current Location (GPS)</td>
+  <td id="city">—</td>
+</tr>
+
+            <tr><td>Country</td><td id="country">—</td></tr>
+            <tr><td>Region</td><td id="region">—</td></tr>
+            <tr><td>Local Time</td><td id="localTime">—</td></tr>
+            <tr><td>Temperature</td><td id="temperature">—</td></tr>
+            <tr><td>Feels Like</td><td id="feelsLike">—</td></tr>
+            <tr><td>Humidity</td><td id="humidity">—</td></tr>
+            <tr><td>Air Pressure</td><td id="pressure">—</td></tr>
+            <tr><td>Wind Speed</td><td id="windSpeed">—</td></tr>
+            <tr><td>Weather Condition</td><td id="weather">—</td></tr>
+        </table>
+
+        <!-- IP INFO -->
+        <table>
+            <caption>IP Information</caption>
+            <tr><td>IP Address</td><td id="ip">—</td></tr>
+          <tr>
+  <td>IP-based Location (ISP)</td>
+  <td id="location">—</td>
+</tr>
+
+            <tr><td>ISP</td><td id="isp">—</td></tr>
+            <tr><td>Organization</td><td id="org">—</td></tr>
+            <tr><td>ASN</td><td id="asn">—</td></tr>
+        </table>
+
+        <!-- BROWSER INFO -->
+        <table>
+            <caption>Browser Information</caption>
+            <tr><td>Browser Name</td><td id="browserName">—</td></tr>
+            <tr><td>Browser Version</td><td id="browserVersion">—</td></tr>
+            <tr><td>User Agent</td><td id="userAgent">—</td></tr>
+            <tr><td>Platform</td><td id="platform">—</td></tr>
+            <tr><td>Language</td><td id="language">—</td></tr>
+            <tr><td>Cookies Enabled</td><td id="cookies">—</td></tr>
+            <tr><td>Online Status</td><td id="onlineStatus">—</td></tr>
+        </table>
+
+        <!-- SYSTEM INFO -->
+      <table>
+    <caption>System & Live Information</caption>
+
+    <tr>
+        <td>Mouse X Position</td>
+        <td id="mouseX">—</td>
+    </tr>
+    <tr>
+        <td>Mouse Y Position</td>
+        <td id="mouseY">—</td>
+    </tr>
+
+    <tr>
+        <td>CPU Cores</td>
+        <td id="cpu">—</td>
+    </tr>
+    <tr>
+        <td>Device RAM (Approx)</td>
+        <td id="ram">—</td>
+    </tr>
+
+    <tr>
+        <td>Screen Width</td>
+        <td id="screenWidth">—</td>
+    </tr>
+    <tr>
+        <td>Screen Height</td>
+        <td id="screenHeight">—</td>
+    </tr>
+    <tr>
+        <td>Screen Resolution</td>
+        <td id="screenResolution">—</td>
+    </tr>
+    <tr>
+    <td>Browser Window Size</td>
+    <td id="windowSize">—</td>
+</tr>
+
+    <tr>
+        <td>Color Depth</td>
+        <td id="colorDepth">—</td>
+    </tr>
+    <tr>
+        <td>Device Pixel Ratio</td>
+        <td id="pixelRatio">—</td>
+    </tr>
+
+    <tr>
+        <td>Operating System</td>
+        <td id="os">—</td>
+    </tr>
+    <tr>
+        <td>Online Status</td>
+        <td id="online">—</td>
+    </tr>
+</table>
+
+
+    </div>
+
+   <footer>
+    <p>
+        © 2025 | Built using JavaScript Web APIs <br>
+        <span>All system, location & storage values are browser-estimated</span><br>
+        <span class="dev">
+            Developed by <strong>Shovan Paria</strong> • CSE Student
+        </span>
+    </p>
+</footer>
+
+
+    <script src="apiIp.js"></script>
+</body>
+</html>

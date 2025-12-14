@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ANIMATED BACKGROUND */
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    animation: float 20s linear infinite;
+    opacity: 0.3;
+}
+
+.bg span:nth-child(1) { top: 10%; left: 10%; }
+.bg span:nth-child(2) { top: 60%; left: 70%; animation-duration: 25s; }
+.bg span:nth-child(3) { top: 80%; left: 30%; animation-duration: 30s; }
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(-1000px) rotate(360deg); }
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+}
+
+/* TABLES */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+table {
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 14px;
+    padding: 12px;
+    border-collapse: collapse;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+caption {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+td {
+    padding: 8px 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+td:first-child {
+    color: #94a3b8;
+    width: 55%;
+}
+
+td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
